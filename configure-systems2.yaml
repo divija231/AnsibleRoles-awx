@@ -4,11 +4,10 @@
   become: yes
 
   tasks:
-
-- name: Call Roles
-  hosts: 34.125.50.2
-  roles:
-   #- hostname
-   #- firewalld
-   #- ntp-config
-   - motd
+    - name: Call Roles
+      hosts: 34.125.50.2
+      roles:
+        #- hostname
+        #- firewalld
+        #- ntp-config
+        - motd
